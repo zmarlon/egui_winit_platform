@@ -322,6 +322,7 @@ impl Platform {
                                     self.raw_input.events.push(egui::Event::Key {
                                         key,
                                         pressed,
+                                        repeat: false,
                                         modifiers: winit_to_egui_modifiers(self.modifier_state),
                                     });
                                 }
